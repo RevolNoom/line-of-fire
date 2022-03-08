@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Unit/Types/Infantry/Infantry.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Item/Bullet.tscn" type="PackedScene" id=2]
+[ext_resource path="res://World/ExperimentField/ExperimentField.gd" type="Script" id=3]
+
+[node name="ExperimentField" type="Node"]
+script = ExtResource( 3 )
+
+[node name="Commander" parent="." instance=ExtResource( 1 )]
+position = Vector2( 68, 198 )
+
+[node name="Unit" parent="." instance=ExtResource( 1 )]
+position = Vector2( 596, 180 )
+
+[node name="Unit2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 789, 166 )
+
+[node name="Bullet" parent="." instance=ExtResource( 2 )]
+position = Vector2( 100, 329 )
+gravity_scale = 0.0
+linear_velocity = Vector2( 200, 0 )

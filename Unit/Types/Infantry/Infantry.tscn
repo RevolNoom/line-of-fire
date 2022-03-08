@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Unit/Types/Infantry/Infantry.gd" type="Script" id=1]
+[ext_resource path="res://Unit/Unit.tscn" type="PackedScene" id=2]
+
+[node name="Infantry" instance=ExtResource( 2 )]
+collision_layer = 17
+collision_mask = 17
+script = ExtResource( 1 )
+
+[node name="Vision" parent="." index="3"]
+visible = true
+
+[node name="Health" parent="Attribute" index="0"]
+Value = 100
+Base = 100
+Max = 100

@@ -1,0 +1,4 @@
+Layer 1: Land Objects (units, terrain)
+Layer 2: Air Objects (planes)
+
+Layer 5: Projectiles (bullets, gas, ...)
